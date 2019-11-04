@@ -1,0 +1,11 @@
+C:\Users\Puerco araña\source\repos\WFA_Reto_Lenguaje_Candidatos\WFA_Reto_Lenguaje_Candidatos\bin\Debug\WFA_Reto_Lenguaje_Candidatos.exe.config
+C:\Users\Puerco araña\source\repos\WFA_Reto_Lenguaje_Candidatos\WFA_Reto_Lenguaje_Candidatos\bin\Debug\WFA_Reto_Lenguaje_Candidatos.exe
+C:\Users\Puerco araña\source\repos\WFA_Reto_Lenguaje_Candidatos\WFA_Reto_Lenguaje_Candidatos\bin\Debug\WFA_Reto_Lenguaje_Candidatos.pdb
+C:\Users\Puerco araña\source\repos\WFA_Reto_Lenguaje_Candidatos\WFA_Reto_Lenguaje_Candidatos\obj\Debug\WFA_Reto_Lenguaje_Candidatos.csprojAssemblyReference.cache
+C:\Users\Puerco araña\source\repos\WFA_Reto_Lenguaje_Candidatos\WFA_Reto_Lenguaje_Candidatos\obj\Debug\WFA_Reto_Lenguaje_Candidatos.Form1.resources
+C:\Users\Puerco araña\source\repos\WFA_Reto_Lenguaje_Candidatos\WFA_Reto_Lenguaje_Candidatos\obj\Debug\WFA_Reto_Lenguaje_Candidatos.Properties.Resources.resources
+C:\Users\Puerco araña\source\repos\WFA_Reto_Lenguaje_Candidatos\WFA_Reto_Lenguaje_Candidatos\obj\Debug\WFA_Reto_Lenguaje_Candidatos.csproj.GenerateResource.cache
+C:\Users\Puerco araña\source\repos\WFA_Reto_Lenguaje_Candidatos\WFA_Reto_Lenguaje_Candidatos\obj\Debug\WFA_Reto_Lenguaje_Candidatos.csproj.CoreCompileInputs.cache
+C:\Users\Puerco araña\source\repos\WFA_Reto_Lenguaje_Candidatos\WFA_Reto_Lenguaje_Candidatos\obj\Debug\WFA_Reto_Lenguaje_Candidatos.exe
+C:\Users\Puerco araña\source\repos\WFA_Reto_Lenguaje_Candidatos\WFA_Reto_Lenguaje_Candidatos\obj\Debug\WFA_Reto_Lenguaje_Candidatos.pdb
+C:\Users\Puerco araña\source\repos\WFA_Reto_Lenguaje_Candidatos\WFA_Reto_Lenguaje_Candidatos\obj\Debug\WFA_Reto_Lenguaje_Candidatos.Perfiles.resources
