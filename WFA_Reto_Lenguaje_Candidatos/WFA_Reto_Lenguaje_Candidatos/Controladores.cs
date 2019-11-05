@@ -33,23 +33,23 @@ namespace WFA_Reto_Lenguaje_Candidatos
 
         }
 
-        public void CalcularNota(string Nota)
-        {
-            int Calificacion = int.Parse(Nota);
-            if (Calificacion <= 10)
-            {
-                double CalculoNotas = ((70 * valorporcentual[indexs] / 100) * Calificacion) / 10;
-                SumaNotas += CalculoNotas;
-            }
-            else
-            {
-                MessageBox.Show("Ingrese nuevamente la calificación con valor: " + Calificacion, "Mensaje informativo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                indexs = 0;
-                Controlador = false;
-            }
-            indexs += 1;
+        //public void CalcularNota(string Nota)
+        //{
+        //    int Calificacion = int.Parse(Nota);
+        //    if (Calificacion <= 10)
+        //    {
+        //        double CalculoNotas = ((70 * valorporcentual[indexs] / 100) * Calificacion) / 10;
+        //        SumaNotas += CalculoNotas;
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Ingrese nuevamente la calificación con valor: " + Calificacion, "Mensaje informativo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        //        indexs = 0;
+        //        Controlador = false;
+        //    }
+        //    indexs += 1;
 
-        }
+        //}
 
 
         public static void SoloNumeros(Control control)
@@ -92,10 +92,23 @@ namespace WFA_Reto_Lenguaje_Candidatos
                 {
                     Txt.BackColor = Color.FromArgb(255, 63, 63);
                     MessageBox.Show("Todos los campos resaltados son obligatorios", "Mensaje informativo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    Controlador = false;
                 }
                 else
                 {
-                    CalcularNota(Txt.Text);
+                    int Calificacion = int.Parse(Txt.Text);
+                    if (Calificacion <= 10)
+                    {
+                        double CalculoNotas = ((70 * valorporcentual[indexs] / 100) * Calificacion) / 10;
+                        SumaNotas += CalculoNotas;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ingrese nuevamente la calificación con valor: " + Calificacion, "Mensaje informativo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        indexs = 0;
+                        Controlador = false;
+                    }
+                    indexs += 1;
                     Txt.BackColor = Color.White;
                 }
             }
@@ -117,10 +130,13 @@ namespace WFA_Reto_Lenguaje_Candidatos
                 }
                 myArray[j + 1] = temp;
             }
+
+            Ordenado.Clear();
             for (int i = 0; i < myArray.Length; i++)
             {
                 int candidato = Notascandidatos.FirstOrDefault(x => x.Value == myArray[i]).Key;
                 Ordenado.Add(candidato, Notascandidatos[candidato]);
+                
             }
             
         }

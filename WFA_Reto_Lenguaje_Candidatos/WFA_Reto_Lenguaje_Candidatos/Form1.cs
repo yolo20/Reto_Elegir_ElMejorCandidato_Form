@@ -79,6 +79,7 @@ namespace WFA_Reto_Lenguaje_Candidatos
             {
                 TxtBoxCedula.BackColor = Color.FromArgb(255, 63, 63);
                 MessageBox.Show("Todos los campos resaltados son obligatorios", "Mensaje informativo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                Controladores.Controlador = false;
             }
             else
             {
@@ -89,8 +90,23 @@ namespace WFA_Reto_Lenguaje_Candidatos
             if (Controladores.Controlador == false) { }
             else
             {
-                Notas.Add(Ncedula, Controladores.SumaNotas);
-                DGV_NotaFinales.Rows.Add(Ncedula, Controladores.SumaNotas);
+                if (Notas.ContainsKey(Ncedula))
+                {
+                    Notas[Ncedula] = Controladores.SumaNotas;
+                    for (int i = DGV_NotaFinales.Rows.Count - 1; i >= 0; i--)
+                    {
+                        DGV_NotaFinales.Rows.RemoveAt(i);
+                    }
+                    foreach (var item in Notas)
+                    {
+                        DGV_NotaFinales.Rows.Add(item.Key, item.Value);
+                    }
+                }
+                else
+                {
+                    Notas.Add(Ncedula, Controladores.SumaNotas);
+                    DGV_NotaFinales.Rows.Add(Ncedula, Controladores.SumaNotas);
+                }
                 Controladores.VaciarTextBox(this.GbCalificaciones);
                 Controladores.VaciarTextBox(this.GbCandidato);
             }
